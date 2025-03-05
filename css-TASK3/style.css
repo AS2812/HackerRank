@@ -1,0 +1,499 @@
+body
+{
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd6tbjdwRRRm6ZL3VetJ0UGek9_rBYhFuhDg&s") repeat;
+}
+
+.shacker-rel
+{
+  position: relative;
+  border: 1px solid #000;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.shacker-abs
+{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: lightblue;
+  padding: 8px;
+}
+
+.shacker-stk
+{
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  padding: 8px;
+}
+
+.shacker-stk ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+.shacker-stk a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+.shacker-fix
+{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 8px 16px;
+  background: green;
+  color: #fff;
+  border: none;
+}
+
+.shacker-zidx
+{
+  position: relative;
+  margin: 18px 0;
+  height: 110px;
+}
+
+.bassat-box1,
+.bassat-box2
+{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+}
+
+.bassat-box1
+{
+  top: 0;
+  left: 0;
+  background: red;
+  z-index: 1;
+}
+
+.bassat-box2
+{
+  top: 45px;
+  left: 45px;
+  background: blue;
+  z-index: 2;
+}
+
+.shacker-scroll
+{
+  height: 140px;
+  overflow: auto;
+  border: 1px dashed #999;
+  margin: 18px 0;
+  position: relative;
+}
+
+.bassat-scrollbox
+{
+  margin-top: 45px;
+  padding: 8px;
+  background: #f0f0f0;
+}
+
+.bassat-hidden
+{
+  height: 45px;
+  overflow: hidden;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  padding: 4px;
+}
+
+.bassat-scrollable
+{
+  height: 45px;
+  overflow: scroll;
+  background: #e8e8e8;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  padding: 4px;
+}
+
+.bassat-ellipsis
+{
+  width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  padding: 4px;
+}
+
+.shacker-horiz
+{
+  width: 140px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  padding: 4px;
+}
+
+.bassat-responsive
+{
+  max-width: 100%;
+  background: #d8d8d8;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 18px;
+}
+
+.shacker-float
+{
+  float: left;
+  margin: 8px;
+}
+
+.bassat-columns .shacker-col
+{
+  float: left;
+  width: 44%;
+  margin: 3%;
+  background: #ddd;
+  padding: 8px;
+}
+
+.shacker-multi .bassat-floatbox
+{
+  float: left;
+  width: 28%;
+  margin: 2%;
+  background: #bbb;
+  padding: 8px;
+  text-align: center;
+}
+
+.shacker-flex
+{
+  display: flex;
+  background: #fafafa;
+  padding: 8px;
+  margin-top: 18px;
+}
+
+.bassat-flexitem
+{
+  margin: 8px;
+  padding: 8px;
+  background: #ccc;
+}
+
+.shacker-float
+{
+  float: left;
+  background: #ffc;
+  margin-right: 8px;
+}
+
+.bassat-move
+{
+  width: 90px;
+  height: 45px;
+  background: purple;
+  animation: move 5s infinite;
+  margin-bottom: 18px;
+}
+
+@keyframes move
+{
+  from { transform: translateX(0); }
+  to { transform: translateX(280px); }
+}
+
+.bassat-animbtn
+{
+  padding: 8px 16px;
+  background: orange;
+  border: none;
+  animation: bgChange 3s infinite;
+  margin-bottom: 18px;
+}
+
+@keyframes bgChange
+{
+  0% { background: orange; }
+  50% { background: red; }
+  100% { background: orange; }
+}
+
+.bassat-delay
+{
+  width: 90px;
+  height: 45px;
+  background: teal;
+  animation: delayed 3s infinite 2s;
+  margin-bottom: 18px;
+}
+
+@keyframes delayed
+{
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.bassat-bounce
+{
+  width: 90px;
+  height: 45px;
+  background: pink;
+  animation: bounce 2s infinite;
+  margin-bottom: 18px;
+}
+
+@keyframes bounce
+{
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
+.bassat-hover
+{
+  width: 90px;
+  height: 45px;
+  background: gray;
+  transition: transform 0.5s;
+  margin-bottom: 18px;
+}
+
+.bassat-hover:hover
+{
+  transform: scale(1.2);
+}
+
+.shacker-bgimg
+{
+  height: 180px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd6tbjdwRRRm6ZL3VetJ0UGek9_rBYhFuhDg&s") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.shacker-bggrad
+{
+  height: 180px;
+  background: linear-gradient(to right, red, yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.shacker-bgcent
+{
+  height: 180px;
+  background: url("https://via.placeholder.com/400") center/auto no-repeat;
+  margin-bottom: 18px;
+}
+
+.shacker-bgfix
+{
+  height: 180px;
+  background: url("https://via.placeholder.com/800x200") fixed/cover no-repeat;
+  margin-bottom: 18px;
+}
+
+.shacker-bgblend
+{
+  height: 180px;
+  background: url("https://via.placeholder.com/800x200") center/cover no-repeat, rgba(255,0,0,0.5);
+  background-blend-mode: multiply;
+  margin-bottom: 18px;
+}
+
+.bassat-center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.shacker-flexbox
+{
+  background: #cce;
+  padding: 8px;
+  margin: 5px;
+}
+
+.bassat-space
+{
+  display: flex;
+  justify-content: space-evenly;
+  background: #efe;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.bassat-wrap
+{
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffe;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.bassat-wrap .shacker-flexbox
+{
+  width: 44%;
+  margin: 5px;
+  background: #ddd;
+  padding: 8px;
+}
+
+.bassat-grow
+{
+  display: flex;
+  background: #efe;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.shacker-growitem
+{
+  background: #def;
+  padding: 8px;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.bassat-order
+{
+  display: flex;
+  background: #fee;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.shacker-order1,
+.shacker-order2,
+.shacker-order3
+{
+  padding: 8px;
+  margin: 5px;
+  background: #ddd;
+}
+
+.shacker-order1
+{
+  order: 2;
+}
+
+.shacker-order2
+{
+  order: 1;
+}
+
+.shacker-order3
+{
+  order: 3;
+}
+
+.shacker-grid3x3
+{
+  display: grid;
+  grid: repeat(3, 90px) / repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.shacker-grid3x3 > div
+{
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shacker-gridspan
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.shacker-gridspan > div
+{
+  background: #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.bassat-gridnamed
+{
+  display: grid;
+  grid-template-areas: "hdr hdr" "side main" "ftr ftr";
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.bassat-gridnamed .shacker-head
+{
+  grid-area: hdr;
+  background: #aaf;
+  padding: 8px;
+}
+
+.bassat-gridnamed .shacker-side
+{
+  grid-area: side;
+  background: #afa;
+  padding: 8px;
+}
+
+.bassat-gridnamed .shacker-main
+{
+  grid-area: main;
+  background: #faa;
+  padding: 8px;
+}
+
+.bassat-gridnamed .shacker-foot
+{
+  grid-area: ftr;
+  background: #ffa;
+  padding: 8px;
+}
+
+.shacker-gridgap
+{
+  display: grid;
+  grid: auto / repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.shacker-gridgap > div
+{
+  background: #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.bassat-gridresp > div
+{
+  background: #ddd;
+  padding: 8px;
+  text-align: center;
+}
