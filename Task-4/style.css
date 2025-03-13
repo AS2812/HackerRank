@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body 
+  {
+    font-family: 'Arial', sans-serif;
+    background-color: #0c0c0c;
+    color: #ffffff;
+  }
+  
+  .navbar 
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+  }
+  
+  .logo 
+  {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links
+   {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a 
+  {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active 
+  {
+    color: #0ef;
+  }
+  
+  .hero 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 72px); 
+    background: #0c0c0c;
+  }
+
+  .hero-text 
+  {
+    flex: 1 1 450px;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text h1 
+  {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .hero-text h2 
+  {
+    font-size: 1.8rem;
+    color: #0ef;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p 
+  {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .hero-buttons 
+  {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn 
+  {
+    padding: 12px 20px;
+    background-color: #0ef;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover 
+  {
+    background-color: #0ac;
+    color: #fff;
+  }
+  
+  .btn-secondary 
+  {
+    background-color: transparent;
+    border: 2px solid #0ef;
+    color: #0ef;
+  }
+  
+  .btn-secondary:hover 
+  {
+    background-color: #0ef;
+    color: #000;
+  }
+  .hero-image 
+  {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img 
+  {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 238, 255, 0.2);
+  }
+  .footer 
+  {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
